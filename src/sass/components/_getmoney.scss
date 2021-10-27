@@ -1,0 +1,64 @@
+.money_section {
+  width: 100%;
+  height: max-content;
+  background: url("../../images/getmoey.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1.7;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+}
+.money_section__partone > h1 {
+  font-size: 60px;
+  padding: 0% 30% 0 14%;
+}
+.money_section__partone > p {
+  font-size: 30px;
+  padding: 0% 20% 0 14%;
+  color: $gray;
+}
+.money_section__partone {
+  margin-left: 40%;
+  padding-top: 5%;
+  @include responsive(800px) {
+    font-size: 20px;
+    margin-left: 10%;
+    padding-top: 6%;
+  }
+}
+
+.money_section__parttwo > h1 {
+  font-size: 35px;
+  padding: 10% 10% 3% 30%;
+  color: rgb(20, 12, 12);
+  font-weight: normal;
+  @include responsive(800px) {
+    font-size: 30px;
+    display: flex;
+    justify-content:center;
+    padding-top: 4%;
+  }
+}
+.money_section__parttwo > button {
+  font-size: 30px;
+  outline: none;
+  padding: 2%;
+  background-color: teal;
+  color: $white;
+  border: none;
+  margin-left: 40%;
+
+}
+
+.money_section__parttwo {
+  margin-left: 40%;
+  padding-top: 5%;
+  @include responsive(765px) {
+    font-size: 20px;
+    margin-left: 10%;
+    padding-top: 6%;
+  }
+}

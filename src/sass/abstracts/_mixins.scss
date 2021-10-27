@@ -1,0 +1,31 @@
+@mixin bgImage($image) {
+  background: url($image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+@mixin bgImageWork($image) {
+  background-color: black;
+  background: url($image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1.7;
+ 
+
+}
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flexVertical {
+  display: flex;
+  align-items: center;
+}
+
+@mixin responsive($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
