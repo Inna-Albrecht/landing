@@ -1,12 +1,15 @@
-.header {
+.header_wrapper {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 80px);
+}
+.header {
+  height: 100%;
   @include bgImage("../../images/bg14.jpg");
-  background-color: rgba(0, 0, 0, 0.6);
   color: $white;
   display: flex;
   flex-direction: column;
-  // align-items: center;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
   &__content {
     float: left !important;
     display: flex;
@@ -37,87 +40,104 @@
     }
   }
   &__textFields {
-    margin-left: 8%;
     display: flex;
-    // justify-content: space-around !important;
     flex-wrap: wrap;
-    margin-top: 4%;
-
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 8px auto;
     @include responsive(765px) {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
+      gap: 1rem;
     }
     & input {
-      padding: 2%;
+      font-size: 1.5rem;
+      padding: 10px;
       color: $white;
-      margin: 0% 5% 4% 2% !important;
       background: transparent;
-      border-radius: 4% !important;
+      border-radius: 8px !important;
       outline: none;
       border: 2px solid $gray;
     }
 
     & input::-webkit-input-placeholder {
       color: $gray;
-      font-size: 15px;
     }
     & button {
-      border-radius: 4% !important;
-      padding: 10% !important;
+      border-radius: 8px;
+      padding: 10px !important;
       background-color: $green;
       color: $white;
       border: none;
-      font-size: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
       width: 150px !important;
     }
   }
 }
 
 .headertwo {
-  width: 100%;
-  height: 80vh;
+  height: 100%;
   @include bgImage("../../images/bg14.jpg");
-  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
   color: $white;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
 
   &__textFields {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 8px auto;
     @include responsive(765px) {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
+      gap: 1rem;
     }
-    & input {
-      padding: 2%;
+    & input,
+    select {
+      width: 320px;
+      font-size: 1.5rem;
+      padding: 10px;
       color: $white;
-      margin: 0% 5% 4% 2% !important;
       background: transparent;
-      border-radius: 4% !important;
+      border-radius: 8px !important;
       outline: none;
       border: 2px solid $gray;
+      & option {
+        background-color: transparent;
+      }
     }
 
     & input::-webkit-input-placeholder {
       color: $gray;
-      font-size: 15px;
+    }
+    & button {
+      border-radius: 8px;
+      padding: 10% !important;
+      background-color: $green;
+      color: $white;
+      border: none;
+
+      font-size: 1.5rem;
+      font-weight: bold;
+      width: 150px !important;
     }
   }
   &__btn {
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 4% !important;
-    padding: 1% !important;
+    margin: 1rem auto;
+    border-radius: 8px;
+    padding: 10px !important;
     background-color: $green;
     color: $white;
     border: none;
-    font-size: 20px;
+
+    font-size: 1.5rem;
+    font-weight: 500;
     width: 150px !important;
   }
 }

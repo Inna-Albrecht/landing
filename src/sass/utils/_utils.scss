@@ -1,6 +1,7 @@
 .container {
-  width: 1200px;
+  // max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
   @include responsive(765px) {
     width: 100%;
     padding: 0 10px;
@@ -31,4 +32,14 @@
 }
 .rel {
   position: relative;
+}
+button {
+  cursor: pointer;
+}
+
+.app{
+  & > *{
+    position: relative;
+    z-index:10;
+  }
 }

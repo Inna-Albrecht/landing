@@ -11,24 +11,24 @@ const HowWork = () => {
           The best way to sell your house easy, fast, and hassle-free
         </p>
 
-        <div class="section group">
-          <div class="col span_1_of_3">
+        <div className="section group">
+          <div className="col span_1_of_3">
             <img className="image__tes" src={Headset} />
-            <div class="pics_content">
+            <div className="pics_content">
               <h1>STEP #1</h1>
               <p>Request your offer inmediatly</p>
             </div>
           </div>
-          <div class="col span_1_of_3">
+          <div className="col span_1_of_3">
             <img className="image__tes" src={Headset_two} />
-            <div class="pics_content">
+            <div className="pics_content">
               <h1>STEP #1</h1>
               <p>Request your offer inmediatly</p>
             </div>
           </div>
-          <div class="col span_1_of_3">
+          <div className="col span_1_of_3">
             <img className="image__tes" src={House} />
-            <div class="pics_content">
+            <div className="pics_content">
               <h1>STEP #1</h1>
               <p>Request your offer inmediatly</p>
             </div>
