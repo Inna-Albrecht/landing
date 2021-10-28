@@ -6,10 +6,9 @@ import Header from "./components/Header/index"
 import HowWork from "./components/HowWork";
 import MakeDiffSection from "./components/MakeDiffSection";
 import Navbar from "./components/Navbar"
-import SlideShow from "./components/SlideShow"
 import SlideShowCs from "./components/SlideShowCs"
-import React from 'react';
 
+import HowWorkDuplicate from "./components/HowWorkDuplicate";
 const settings = {
   images: [
     //{ url: require('../assets/images/bg01.jpg'), position: 'center' },
@@ -40,6 +39,9 @@ function App() {
       <Header />
       <HowWork />
       <GetMoneySection />
+
+      <HowWorkDuplicate />
+
       <MakeDiffSection />
       <Footer />
     </div>
