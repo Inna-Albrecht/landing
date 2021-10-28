@@ -7,14 +7,16 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar__content">
           <div className="navbar__left">
-            <img src={logo} alt="logo"/>
+            <img src={logo} alt="logo" />
           </div>
           <ul className="navbar__right">
             <li>
               <a href="">Call us now !</a>
             </li>
             <li>
-              <button className="navbar__btn">866-xxx-xxx-xxx </button>
+              <button className="navbar__btn">
+                <a href="tel:+8669640730">866-xxx-xxx-xxx</a>
+              </button>
             </li>
           </ul>
         </div>

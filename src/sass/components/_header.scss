@@ -6,21 +6,26 @@
   height: 100%;
   @include bgImage("../../images/bg14.jpg");
   color: $white;
-  display: flex;
-  flex-direction: column;
   background: transparent;
   background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   &__content {
-    float: left !important;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 10%;
+
+    margin: 1rem auto;
+    @include responsive(765px) {
+      width: 95%;
+    }
   }
 
   &__content-h1 {
     font-size: 30px;
-    margin-left: 10%;
     letter-spacing: 2px;
     font-weight: 600;
     @include responsive(765px) {
@@ -29,9 +34,8 @@
     }
   }
   &__content-p {
-    color: $gray;
+    color: rgb(189, 188, 188);
     font-size: 20px;
-    margin-left: 10%;
     letter-spacing: 2px;
 
     @include responsive(765px) {
@@ -40,11 +44,12 @@
     }
   }
   &__textFields {
+    max-width: 96%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
-    margin: 8px auto;
+    margin: 1rem auto;
     @include responsive(765px) {
       display: flex;
       flex-wrap: wrap;
