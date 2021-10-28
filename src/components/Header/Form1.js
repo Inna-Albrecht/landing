@@ -4,7 +4,12 @@ import { usePlacesWidget } from "react-google-autocomplete";
 const Form1 = ({ setFirstFormData }) => {
     const { ref } = usePlacesWidget({
         apiKey: process.env.REACT_APP_GOOGLE_MAP_API_KEY,
-        onPlaceSelected: (place) => console.log(place)
+        onPlaceSelected: (place) => console.log(place),
+        options: {
+            fields: ["address_components", "geometry"],
+            types: ["address"],
+            componentRestrictions: { country: "us" },
+        },
     })
     const [data, setData] = useState({
         address: "",

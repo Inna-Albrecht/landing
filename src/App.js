@@ -7,6 +7,7 @@ import HowWork from "./components/HowWork";
 import MakeDiffSection from "./components/MakeDiffSection";
 import Navbar from "./components/Navbar"
 import SlideShow from "./components/SlideShow"
+import SlideShowCs from "./components/SlideShowCs"
 import React from 'react';
 
 const settings = {
@@ -34,7 +35,8 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <SlideShow settings={settings} />
+      {/* <SlideShow settings={settings} /> */}
+      <SlideShowCs settings={settings} />
       <Header />
       <HowWork />
       <GetMoneySection />
