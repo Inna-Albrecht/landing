@@ -6,10 +6,10 @@ const GetMoneySection = () => {
         <p>We’ll buy your house all cash </p>
       </div>
       <div className="money_section__parttwo">
-        <h1>
+        <p>
           Our process is quick and simple, that makes things easy for sellers
           that may be going through hard times.
-        </h1>
+        </p>
         <button>Sell your house now</button>
       </div>
     </div>

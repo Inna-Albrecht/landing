@@ -7,7 +7,7 @@ const Header = () => {
 
     return (
         <div className="header_wrapper">
-            {!firstFormData ? <Form2 /> : <Form1 setFirstFormData={setFirstFormData} />}
+            {firstFormData ? <Form2 /> : <Form1 setFirstFormData={setFirstFormData} />}
         </div>
     );
 };

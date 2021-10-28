@@ -20,6 +20,9 @@
   }
   @include responsive(600px) {
     width: 0px !important;
+    &__left img {
+      width: 23vw;
+    }
   }
 
   &__right {

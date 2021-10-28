@@ -3,12 +3,6 @@
   flex-direction: row;
 }
 
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
-  .diff_section {
-    flex-direction: column;
-  }
-}
 .diff_section_one {
   height: 100vh;
   width: 100%;
@@ -23,6 +17,7 @@
   flex-direction: column;
   padding: 4%;
 }
+
 .diff_section_two {
   background-color: black;
   width: 100%;
@@ -40,4 +35,14 @@
 }
 .text_col {
   color: teal;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 920px) {
+  .diff_section {
+    flex-direction: column;
+  }
+  .diff_section_one {
+    background-position: 96% center;
+  }
 }
