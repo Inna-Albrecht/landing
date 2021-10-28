@@ -30,7 +30,7 @@ const Form1 = ({ setFirstFormData }) => {
             <div className="header__textFields">
                 <input ref={ref} type="text" placeholder="What's the address?" name="address" onChange={onDataChange} />
                 <input type="text" placeholder="and your name?" name="name" onChange={onDataChange} />
-                <input type="text" placeholder="Phone number" name="number" onChange={onDataChange} />
+                <input type="tel" placeholder="Phone number" name="number" onChange={onDataChange} />
                 <div className="navbar__btn">
                     <button className="" onClick={() => setFirstFormData(data)}>
                         Get Offer!

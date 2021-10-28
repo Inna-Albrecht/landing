@@ -21,7 +21,7 @@ const Form2 = () => {
                 <input type="text" placeholder="And how many baths" />
             </div>
 
-            <button className="headertwo__btn" onClick={() => setMore(false)}>
+            <button className="headertwo__btn" >
                 Get Offer!
             </button>
         </div>
