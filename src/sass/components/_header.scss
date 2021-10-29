@@ -1,0 +1,155 @@
+.header_wrapper {
+  width: 100%;
+  height: calc(100vh - 80px);
+
+  form {
+    height: 100%;
+  }
+}
+.header {
+  height: 100%;
+  @include bgImage("../../images/bg14.jpg");
+  color: $white;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem auto;
+    @include responsive(765px) {
+      width: 95%;
+    }
+  }
+
+  &__content-h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    @include responsive(765px) {
+      font-size: 20px;
+      margin-left: 5%;
+    }
+  }
+  &__content-p {
+    color: rgb(189, 188, 188);
+    font-size: 20px;
+    letter-spacing: 2px;
+
+    @include responsive(765px) {
+      font-size: 20px;
+      margin-left: 5%;
+    }
+  }
+  &__textFields {
+    max-width: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem auto;
+    @include responsive(765px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    & input {
+      font-size: 1.5rem;
+      padding: 10px;
+      color: $white;
+      background: transparent;
+      border-radius: 8px !important;
+      outline: none;
+      border: 2px solid $gray;
+    }
+
+    & input::-webkit-input-placeholder {
+      color: $gray;
+    }
+    & button {
+      border-radius: 8px;
+      padding: 10px !important;
+      background-color: $green;
+      color: $white;
+      border: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      width: 150px !important;
+    }
+  }
+}
+
+.headertwo {
+  height: 100%;
+  @include bgImage("../../images/bg14.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: $white;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &__textFields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 8px auto;
+    @include responsive(765px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    & input,
+    select {
+      width: 320px;
+      font-size: 1.3rem;
+      padding: 10px;
+      color: $white;
+      background: transparent;
+      border-radius: 8px !important;
+      outline: none;
+      border: 2px solid $gray;
+      & option {
+        color: #000;
+      }
+    }
+    select {
+      padding: 10px 2px;
+    }
+
+    & input::-webkit-input-placeholder {
+      color: $gray;
+    }
+    & button {
+      border-radius: 8px;
+      padding: 10% !important;
+      background-color: $green;
+      color: $white;
+      border: none;
+
+      font-size: 1.5rem;
+      font-weight: bold;
+      width: 150px !important;
+    }
+  }
+  &__btn {
+    margin: 1rem auto;
+    border-radius: 8px;
+    padding: 10px !important;
+    background-color: $green;
+    color: $white;
+    border: none;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 150px !important;
+  }
+}

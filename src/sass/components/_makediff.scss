@@ -1,0 +1,48 @@
+.diff_section {
+  display: flex;
+  flex-direction: row;
+}
+
+.diff_section_one {
+  height: 100vh;
+  width: 100%;
+  background: url("../../images/istock-1081824440.jpg");
+  background-position: 100% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1.7;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+}
+
+.diff_section_two {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+.diff_section_two > h1 {
+  padding: 15% 10% 5% 10%;
+  color: white;
+  font-size: 50px;
+}
+.diff_section_two > p {
+  padding: 3% 10% 1% 10%;
+  color: $gray;
+  font-size: 20px;
+}
+.text_col {
+  color: teal;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 920px) {
+  .diff_section {
+    flex-direction: column;
+  }
+  .diff_section_one {
+    background-position: 96% center;
+  }
+}
