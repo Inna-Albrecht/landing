@@ -1,6 +1,10 @@
 .header_wrapper {
   width: 100%;
   height: calc(100vh - 80px);
+
+  form {
+    height: 100%;
+  }
 }
 .header {
   height: 100%;
@@ -17,7 +21,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-
+    text-align: center;
     margin: 1rem auto;
     @include responsive(765px) {
       width: 95%;
@@ -106,7 +110,7 @@
     & input,
     select {
       width: 320px;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       padding: 10px;
       color: $white;
       background: transparent;
@@ -114,8 +118,11 @@
       outline: none;
       border: 2px solid $gray;
       & option {
-        background-color: transparent;
+        color: #000;
       }
+    }
+    select {
+      padding: 10px 2px;
     }
 
     & input::-webkit-input-placeholder {

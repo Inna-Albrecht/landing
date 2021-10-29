@@ -2,12 +2,12 @@ import React from 'react'
 
 const Form2 = () => {
     return (
-        <div className="headertwo">
-            <form action="#">
+        <form action="#">
+            <div className="headertwo">
                 <div className="headertwo__textFields">
                     <select name="house-condition">
                         <option value="">What's the Condition of the house?</option>
-                        <option style={{ backgroundColor: "transparent !important" }} value="volvo">First</option>
+                        <option value="volvo">First</option>
                         <option value="saab">Second</option>
                     </select>
                     <input type="text" placeholder="How many beds?" />
@@ -16,7 +16,7 @@ const Form2 = () => {
                 <div className="headertwo__textFields">
                     <select name="house-condition">
                         <option value="">What's the Condition of the house?</option>
-                        <option style={{ backgroundColor: "transparent !important" }} value="volvo">First</option>
+                        <option value="volvo">First</option>
                         <option value="saab">Second</option>
                     </select>
                     <input type="text" placeholder="How many beds?" />
@@ -26,8 +26,8 @@ const Form2 = () => {
                 <button className="headertwo__btn" >
                     Get Offer!
                 </button>
-            </form>
-        </div>
+            </div>
+        </form>
     )
 }
 
